@@ -6,3 +6,5 @@ Sempre avisar quando fizer um push para que todos estejamos na mesma página em 
 
 Qualquer dúvida falar com o Mestre Choji Akimichi!
 =)
+
+tendeu
