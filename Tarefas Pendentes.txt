@@ -1,26 +1,45 @@
-Pesquisa dos elementos necessários para conclusão do projeto:
-	- Pesquisar entender os números:
+<h2>Pesquisa dos elementos necessários para conclusão do projeto:</h2>
+
+	<b>Alex Ajuda em tudo, quem precisar de ajuda só falar!</b>
+
+	<b>R A I S S A, e Bruno</b>
+
+	- Pesquisar entender os números:  
+		Quantos agricultores existem no Brasil, quantos deles utilizam compostos organicos como adubo?,
+		Empresas que fazem esse processo,
 		Potencial clientes,
 		Interessados,
 		Público alvo,
 		Demanda pelo serviço de compostagem;
 
+	<b>Leticia Lago, Rios e oceanos</b>	
+
 	- Vantagens e desvantagens;
+
+	<b>Gabriel</b>	
 
 	- Plano de dados, ou seja, como os dados navegarão nesses ambientes rurais (INTERNET);
 	
 	- Entender profundamente os funcionamentos e processos da COMPOSTAGEM;
+
+	<b>Carlos</b>	
 		- Decomposição,
 		- Materias organicos,
+
+	<b>Natalia</b>
 		- Temperatura Ideal,
 		- Umidade,
 		- Aeração;
+
+	<b>TODOS</b>	
 
 	- Aprender as competencias necessárias para a criação do projeto:
 		- Arduíno,
 		- Sensores,
 		- Linguagem de programação
 		- Perífericos;
+
+	<b>Grupo</b>	
 		
 	Listar para próxima atividade:
 		- Funcionalidades
