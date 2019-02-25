@@ -1,0 +1,28 @@
+Pesquisa dos elementos necessários para conclusão do projeto:
+	- Pesquisar entender os números:
+		Potencial clientes,
+		Interessados,
+		Público alvo,
+		Demanda pelo serviço de compostagem;
+
+	- Vantagens e desvantagens;
+
+	- Plano de dados, ou seja, como os dados navegarão nesses ambientes rurais (INTERNET);
+	
+	- Entender profundamente os funcionamentos e processos da COMPOSTAGEM;
+		- Decomposição,
+		- Materias organicos,
+		- Temperatura Ideal,
+		- Umidade,
+		- Aeração;
+
+	- Aprender as competencias necessárias para a criação do projeto:
+		- Arduíno,
+		- Sensores,
+		- Linguagem de programação
+		- Perífericos;
+		
+	Listar para próxima atividade:
+		- Funcionalidades
+		
+		- Requisitos
