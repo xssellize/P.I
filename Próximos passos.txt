@@ -1,0 +1,27 @@
+Próximos passos para realização da sprint do dia 11/03!!
+
+	Quem criou conta na Azure? (Coloquem o nome de quem criou, todos precisamos ter!!)
+	
+	- Alex B.
+	- Carlos
+	...
+
+
+	Configurar projeto no GitHub:
+		Feito/Em processo
+
+
+	Doc. Contexto de Negócio:
+		Não iniciado
+
+	Doc. Justificativa do Projeto:
+		Iniciado (Alex)
+
+	Desenho da Solução:
+		Não iniciado
+
+	Planilha de Requisitos:
+		Não iniciado
+	
+	Protótipo do site:
+		Não iniciado
