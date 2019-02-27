@@ -1,17 +1,17 @@
-<h2>Pesquisa dos elementos necessários para conclusão do projeto:</h2>
+<h2>Pesquisa dos elementos necessÃ¡rios para conclusÃ£o do projeto:</h2>
 
-	<b>Alex Ajuda em tudo, quem precisar de ajuda só falar!</b>
+	<b>Qualquer coisa falar com a Raissa!</b>
 
 	<b>R A I S S A, e Bruno</b>
 
-	- Pesquisar entender os números:  
+	- Pesquisar entender os nÃºmeros:  
 		Quantos agricultores existem no Brasil, quantos deles utilizam compostos organicos como adubo?,
 		Empresas que fazem esse processo,
 		EMPRESAS TRATADORAS DE RESIDUOS,
 		Potencial clientes,
 		Interessados,
-		Público alvo,
-		Demanda pelo serviço de compostagem;
+		PÃºblico alvo,
+		Demanda pelo serviÃ§o de compostagem;
 
 		https://www.vgresiduos.com.br/blog/como-funciona-e-como-montar-uma-usina-de-compostagem/
 
@@ -25,30 +25,30 @@
 
 	<b>Gabriel</b>	
 
-	- Plano de dados, ou seja, como os dados navegarão nesses ambientes rurais (INTERNET);
+	- Plano de dados, ou seja, como os dados navegarÃ£o nesses ambientes rurais (INTERNET);
 	
 	- Entender profundamente os funcionamentos e processos da COMPOSTAGEM;
 
 	<b>Carlos</b>	
-		- Decomposição,
+		- DecomposiÃ§Ã£o,
 		- Materias organicos,
 
 	<b>Natalia</b>
 		- Temperatura Ideal,
 		- Umidade,
-		- Aeração;
+		- AeraÃ§Ã£o;
 
 	<b>TODOS</b>	
 
-	- Aprender as competencias necessárias para a criação do projeto:
-		- Arduíno,
+	- Aprender as competencias necessÃ¡rias para a criaÃ§Ã£o do projeto:
+		- ArduÃ­no,
 		- Sensores,
-		- Linguagem de programação
-		- Perífericos;
+		- Linguagem de programaÃ§Ã£o
+		- PerÃ­fericos;
 
 	<b>Grupo</b>	
 		
-	Listar para próxima atividade:
+	Listar para prÃ³xima atividade:
 		- Funcionalidades
 		
 		- Requisitos
