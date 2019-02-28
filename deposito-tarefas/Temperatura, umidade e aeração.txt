@@ -1,4 +1,4 @@
-TEMPERATURA IDEAL
+﻿TEMPERATURA IDEAL
 
 A faixa de temperatura ideal para a decomposição do material varia de 50ºC a 60ºC. 
 Temperaturas excessivas podem queimar o material, o que não é desejável. Por isso,
@@ -15,7 +15,7 @@ além de também ajudar a regular o pH. É um dos fatores mais importantes e pod
 
 UMIDADE
 A umidade é um fator muito importante para a compostagem, pois permite que os micro-organismos que moram na terra e fazem a decomposição 
-dos materiasi organicos consigam se desenvolver,e é através da agua que eles se alimentam. 
+dos materiais organicos consigam se desenvolver,e é através da agua que eles se alimentam. 
 O principal micro-organismo, são as minhocas, elas fazem sua respiração através da pele, deste modo, 
 para sua sobrevivência, devem existir teores adequados de umidade. Se a pele da minhoca estiver seca, isso causará a sua morte. 
 Por isso, o seu habitat dentro da composteira deverá proporcionar retenção e absorção adequada.
