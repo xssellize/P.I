@@ -1,17 +1,28 @@
-Existem dois tipos de processos de compostagem, a que ocorre a presença
-do oxigênio do ar, chamada de Aeróbia, e outra sem a presença do oxigênio,
-chamada de Anaeróbia.
+Existem dois tipos de processos de compostagem, a que ocorre a presenÃ§a
+do oxigÃªnio do ar, chamada de AerÃ³bia, e outra sem a presenÃ§a do oxigÃªnio,
+chamada de AnaerÃ³bia.
 
-A digestão Aeróbia é um processo de decomposição orgânica onde as bactérias
-aeróbicas, que apenas sobrevivem na presença de oxigênio, conseguem rapidamente
-decompor os resíduos orgânicos, tendo como produtos o gás carbônico CO2 e água.
+A digestÃ£o AerÃ³bia Ã© um processo de decomposiÃ§Ã£o orgÃ¢nica onde as bactÃ©rias
+aerÃ³bicas, que apenas sobrevivem na presenÃ§a de oxigÃªnio, conseguem rapidamente
+decompor os resÃ­duos orgÃ¢nicos, tendo como produtos o gÃ¡s carbÃ´nico CO2 e Ã¡gua.
 Este processo ocorre com alguma celeridade e produz calor.
 
-Na compostagem anaeróbia a decomposição é realizada por micoorganismos que podem
-viver em ambientes sem a presença de oxigênio; ocorre em baixa temperatura, 
-com exalação de fortes odores, e leva mais tempo até que a matéria orgânica se 
+Na compostagem anaerÃ³bia a decomposiÃ§Ã£o Ã© realizada por micoorganismos que podem
+viver em ambientes sem a presenÃ§a de oxigÃªnio; ocorre em baixa temperatura, 
+com exalaÃ§Ã£o de fortes odores, e leva mais tempo atÃ© que a matÃ©ria orgÃ¢nica se 
 estabilize.
 
-Bibliográfia:
+COLOCAR ISSO NO DOC CONTEXTO DE NEGOCIO
+
+Antes de comeÃ§ar a falar como que funciona no processo de compostagem, Ã© preciso saber os tipos de processo que existem.
+
+Existem dois tipos de processos de compostagem, a que ocorre a presenÃ§a do oxigÃªnio do ar, chamada de AerÃ³bia, e a outra sem a presenÃ§a do oxigÃªnio, chamada de AnaerÃ³bia.
+
+A digestÃ£o aerÃ³bia Ã© um processo de decomposiÃ§Ã£o da matÃ©ria orgÃ¢nica onde as bactÃ©rias aerÃ³bicas necessitam de presenÃ§a de oxigÃªnio para rapidamente decompor os resÃ­duos orgÃ¢nicos tendo como produtos o gÃ¡s carbÃ´nico CO2 e agua.
+Na compostagem anaerÃ³bica a decomposiÃ§Ã£o Ã© realizada por microrganismos que podem sobreviver sem a presenÃ§a de oxigÃªnio, ocorre em baixa temperatura mas exala fortes odores e leva mais tempo para estabilizar a matÃ©ria orgÃ¢nica.
+
+
+
+BibliogrÃ¡fia:
 http://www.resol.com.br/cartilha8/capitulo12b2.php
 http://meioambiente.culturamix.com/desenvolvimento-sustentavel/a-compostagem-e-seus-diversos-tipos
