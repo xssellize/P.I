@@ -1,0 +1,39 @@
+
+						** REVISÃO GITHUB **
+
+======== DO GIT P/ LOCAL ===================================================================================================
+
+Para baixar um repositorio remoto pel 1 vez -> comando git clone
+
+1 - git clone (+ URL do repositório)
+
+======== DO LOCAL P/ REMOTO(GIT) ==========================================================================================
+
+2 - entrar no diretório(pasta) do repositorio
+	cd e nome do repositório (deve aparecer master)
+
+3 - git status - git mostra se houve alguma altração no documento
+
+4- git pull - mostra quantos aruivo foram alteradas. 
+
+5 - git add . -> serve pra monitorar o arquivo, mas NÃO o cria no repositório do GIT. 
+
+6 - git commit -m -> cria o arquivo no repositório LOCAL (não no remoto -> git)
+	-m "mensagem" -> é uma mensagem obrigatória que é enviada pra mostrar que commits foram feitos. Ex:"Cor de fundo trocada, ou bug removido"
+
+7 - git push -> comamdo que envia o arquivo do local para o REPOSITORIO REMOTO (github).
+	1 - inserir usuario: (seu email )
+	2 - inserir a senha na nova janela q se abrirá : (sua senha)
+		Ao fim deve aparecer: maser -> master.
+	3 - Verificar lá no github e o ARQUIVO FOI adicionado ao repsitório.
+
+Obs: é o contrario do PULL. O push atualiza no rep remoto o que foi alterado no rep. local.
+
+
+1 alterção realizada. -> 
+2 git status (mostra em vermelho) -> 
+3 git add . -> 
+4 git status (vai estar em verde), 
+5 git commit -m "mensagem"
+6 git push pra enviar o arquivo pro rep. remoto.
+7 conferit no github se o arquivo chegou.
