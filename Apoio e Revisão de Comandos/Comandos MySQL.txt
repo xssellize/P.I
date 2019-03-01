@@ -1,0 +1,67 @@
+
+create database adsa; -- Para criar a base de dados
+use adsa;
+-- criando a tabela Aluno
+create table Aluno(
+  ra int primary key, -- ra é a chave primária 
+  nome varchar(40),
+  bairro varchar(40)
+);
+
+-- Inserindo dados de um aluno na tabela
+
+insert into aluno values
+(01191040, 'Raissa Linda', 'Moema'), -- quando é int não precisa por o num entre aspas
+(01191041, 'Carlão Barrigudinho', 'Tiradentes quebrada'),
+(01191054,'Natália Burguesinha','Casa rosa');
+
+
+select * from aluno;
+
+-- insere dados de varios alunos de uma vez
+insert into Aluno values
+(01191171,'Alek loko', 'Itaim Bibi'),
+(01191070, 'Letícia do Clero', 'Vila Matilde'),
+(01191093, 'Bruninho','Vila Yolanda I');
+
+
+-- exibir apenas uma ou mais colunas - dos alunos
+select nome from Aluno;
+select nome, bairro from Aluno;
+
+-- exiir apenas os dados dos alunos com ra = 01191040
+
+select * from Aluno where ra > 01191041;
+select * from Aluno where ra >= 01191040;
+select * from Aluno where ra = 01191040;
+select nome from aluno where bairro = 'Moema';
+
+-- exibir os dados dos alunos em ordem alfaética pelo nome
+select * from Aluno order by nome asc;  -- A a Z ascendente. (é o padrão quando n se põe nada)
+select * from Aluno order by nome desc; -- do Z para o A
+select * from Aluno order by bairro;
+select * from Aluno where ra < 01191070 order by nome;
+
+-- Exibir ps dados dos alunos cujo nome começa com r
+select * from Aluno where nome like 'R%';
+select * from Aluno where bairro like 'I%'; -- Bairro que começam com I
+
+select * from Aluno where nome like '%a'; -- nomes terminados em a
+
+select * from Aluno where bairro like'Vila%';
+
+select * from Aluno where nome like '_a%'; -- mostra nomes em que a SEGUNDA LETRA é A
+select * from Aluno where nome like '___s%'; -- mostra nomes com a 3 letras S
+select * from Aluno where bairro like '%e__'; -- penultima letra E
+
+SELECT* FROM ALUNO WHERE RA <> 01191040; -- POR PADRÃO <> TODO BANCO Q USA SQL. OUTRO -> != N É TODOS OS BANCOS Q USAM.
+
+-- ALTERAAR VALORES CADASTRADOS
+
+UPDATE Aluno set bairro='Paraiso' where ra = 01191041; -- mudando o bairro do carlos.alter
+
+update aluno set nome='Bruninho do Axé', bairro='Guaranáis' where ra=01191093;
+select * from aluno;
+
+
+drop table Aluno;
