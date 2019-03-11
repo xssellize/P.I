@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Anton|Russo+One|Source+Sans+Pro');
+
+	#grupo{
+		width: 140px;
+		margin-left: 25px;
+		font-family: 'Montserrat', serif;
+		font-size: 30px;
+		color: white;
+	}
+	#foxtech{
+		font-family: 'Russo One', cursive;
+		font-size: 30px;
+		color: white;
+	}
+
+	.div-titulo{
+		text-align: center;
+		height: 500px;
+		background-image: url('https://www.casablancaturismo.com.br/2017/wp-content/uploads/2016/12/tecnologiacb.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		filter: blur(4px);
+		background-size: cover;
+	}
+
+	.titulo{
+		padding: 5em;
+		color: black;
+	}
