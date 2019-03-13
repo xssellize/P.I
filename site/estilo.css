@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Anton|Russo+One|Source+Sans+Pro');
 
+	/*inicio titulo*/
+
 	#grupo{
 		width: 140px;
 		margin-left: 25px;
@@ -13,6 +15,9 @@
 		color: white;
 	}
 
+	/*fim titulo*/
+
+	/*Inicio página principal*/
 	.div-foto{
 		text-align: center;
 		height: 500px;
@@ -26,9 +31,8 @@
 	.div-titulo{
 		position: absolute;
 		margin-top: -23%;
-	}
-	.titulo{
-		margin-left: 550px;
+		width: 100%;
+		text-align: center;
 	}
 	.grupo{
 		font-family: 'Montserrat', serif;
@@ -36,6 +40,5 @@
 	.foxtech{
 		font-family: 'Russo One', cursive;
 	}
-	.subtitulo{
-		margin-left: 275px;
-	}
+
+	/*Fim página principal*/
