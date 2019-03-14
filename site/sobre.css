@@ -1,0 +1,32 @@
+body{
+    background-image:url(imagens/fundo.png);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.base{
+background-color: white;
+text-align: center;
+width: 50%;
+height: 70%;
+margin-left: 25%
+}
+
+.texto{
+width: 50%;
+height: 70%;
+background-color: white;
+}
+
+.imagem1{
+    margin-left: 03%
+}
+
+.imagem2{
+    width: 220px;
+    height: 220px;
+    margin-left: 80%;
+    margin-top: -55%;
+}
