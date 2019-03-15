@@ -67,6 +67,11 @@ margin-left: 1em;
 margin-right: 1em;
 }
 
+.border-header-caixas-baixas{
+    border: solid 1px;
+    border-radius: 10px;
+}
+
 .tvisao{
     text-align: justify;
     margin-left: 1em;
