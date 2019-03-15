@@ -62,12 +62,12 @@
 	}
 
 	.caixa{
-		border: groove 5px;
+		border: solid 3px;
 		height: 400px; 
 		width: 300px;
 		text-align: center;
 		background-color: #FFFFFF;
-
+		border-radius: 20px;
 	}
 	.titulo-caixas{
 		margin-top: 20px;
