@@ -59,8 +59,8 @@ border-color: grey;
     margin-top: -30%;
     position: absolute;
     border-style: solid;
-border-width: 1px;
-border-color: grey;
+    border-width: 1px;
+    border-color: grey;
 }
 
 .center{
