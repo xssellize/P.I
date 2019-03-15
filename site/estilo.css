@@ -2,17 +2,12 @@
 
 	/*inicio titulo*/
 
-	#grupo{
-		width: 140px;
-		margin-left: 25px;
-		font-family: 'Montserrat', serif;
-		font-size: 40px;
-		color: white;
+
+	#logo{
+		width: 200px;
 	}
-	#foxtech{
-		font-family: 'Russo One', cursive;
-		font-size: 40px;
-		color: white;
+	#foxinicial{
+		width: 400px;
 	}
 	body{
 		background-color: #F7F7EB;
@@ -33,15 +28,9 @@
 
 	.div-titulo{
 		position: absolute;
-		margin-top: -23%;
+		margin-top: -35%;
 		width: 100%;
 		text-align: center;
-	}
-	.grupo{
-		font-family: 'Montserrat', serif;
-	}
-	.foxtech{
-		font-family: 'Russo One', cursive;
 	}
 
 
