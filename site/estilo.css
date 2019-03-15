@@ -6,13 +6,16 @@
 		width: 140px;
 		margin-left: 25px;
 		font-family: 'Montserrat', serif;
-		font-size: 30px;
+		font-size: 40px;
 		color: white;
 	}
 	#foxtech{
 		font-family: 'Russo One', cursive;
-		font-size: 30px;
+		font-size: 40px;
 		color: white;
+	}
+	body{
+		background-color: #F7F7EB;
 	}
 
 	/*fim titulo*/
@@ -41,4 +44,65 @@
 		font-family: 'Russo One', cursive;
 	}
 
+
+	.div-meio{
+		height: 520px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #F7F7EB;
+	}
+	.div-titulo-meio{
+		padding-top: 50px;
+		margin-bottom: 20px;
+		background-color: #F7F7EB;
+	}
+	.font-titulo-meio{
+		font-size: 30px;
+	}
+
+	.caixa{
+		border: groove 5px;
+		height: 400px; 
+		width: 300px;
+		text-align: center;
+		background-color: #FFFFFF;
+
+	}
+	.titulo-caixas{
+		margin-top: 20px;
+	}
+
+	.btn-caixas{
+		width: 200px;
+	}
+	.btn-caixa-2{
+		margin-top: 40px;
+	}
+	.btn-caixa-3{
+		margin-top: 80px;
+	}
+
+
+
+
 	/*Fim página principal*/
+
+
+	/*inicio footer*/
+
+	.titulo-rodape{
+		font-size: 25px;
+	}
+
+	.espacamento-nome{
+		margin-top: 20px;
+		height: 47px;
+	}
+
+	ul{
+		list-style-type: none;
+		text-align: center;
+	}
+
+
+	/*final footer*/
