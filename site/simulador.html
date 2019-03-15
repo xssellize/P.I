@@ -1,53 +1,180 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Simulador Financeiro</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body>
 
-		<div class="navbar navbar-expand-lg navbar-dark bg-info text-white">
-	
-			<!-- Logo -->
-			<a href="index.html" class="navbar-brand">
-				<span id="grupo">Grupo</span><span id="foxtech">FoxTech</span>
-			</a>
+<head>
+	<title>Simulador Financeiro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		tr {
+			color: red;
+		}
 
-			<!-- Menu Hamburguer -->
-			<button class="navbar-toggler" style="color: white;" data-toggle="collapse" data-target="#navegacao">
-				<span><i class="fa fa-bars fa-1x" id="btMenu"></i></span>
-			</button>
+		input {
+			outline: rgba(0, 0, 0, 0);
+		}
 
-			<!-- Navegãção -->
-			<div class="collapse navbar-collapse" id="navegacao">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="index.html" class="nav-link text-light"><button class="btn btn-outline-light" type="button"><span>PÁGINA INICIAL</span></button></a>
-					</li>
-					<li class="nav-item">
-						<a href="sobre.html" class="nav-link text-light"><button class="btn btn-outline-light" type="button"><span>SOBRE</span></button></a>
-					</li>
-					<li class="nav-item">
-						<a href="simulador.html" class="nav-link text-light"><button class="btn btn-outline-light" type="button"><span>SIMULADOR FINANCEIRO</span></button></a>
-					</li>
-					<li class="nav-item">
-						<a href="contato.html" class="nav-link text-light"><button class="btn btn-outline-light" type="button"><span>CONTATO</span></button></a>
-					</li>
-				</ul>
+		input:focus {
+			border-color: #0079ff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="navbar navbar-expand-lg navbar-dark bg-info text-white">
+
+		<!-- Logo -->
+		<a href="index.html" class="navbar-brand">
+			<span id="grupo">Grupo</span>
+			<span id="foxtech">FoxTech</span>
+		</a>
+
+		<!-- Menu Hamburguer -->
+		<button class="navbar-toggler" style="color: white;" data-toggle="collapse" data-target="#navegacao">
+			<span>
+				<i class="fa fa-bars fa-1x" id="btMenu"></i>
+			</span>
+		</button>
+
+		<!-- Navegãção -->
+		<div class="collapse navbar-collapse" id="navegacao">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link text-light">
+						<button class="btn btn-outline-light" type="button">
+							<span>PÁGINA INICIAL</span>
+						</button>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="sobre.html" class="nav-link text-light">
+						<button class="btn btn-outline-light" type="button">
+							<span>SOBRE</span>
+						</button>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="simulador.html" class="nav-link text-light">
+						<button class="btn btn-outline-light" type="button">
+							<span>SIMULADOR FINANCEIRO</span>
+						</button>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="contato.html" class="nav-link text-light">
+						<button class="btn btn-outline-light" type="button">
+							<span>CONTATO</span>
+						</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<h3>Quantas composteiras sua empresa possui?</h3>
+	<input type="number" id="qtdcomposteiras" min="0"
+		class="hidden-xs form-control ng-valid ng-valid-number ng-valid-max ng-valid-min ng-dirty"
+		style="height:54px;text-align:left;padding-left:70px;font-size:1.5em;margin:0 auto 20px auto;font-weight:700;float:left;width:70%">
+	<br>
+	<br>
+	<h3>Área em metros guadrados das composteiras</h3>
+	<input type="number" id="areacompostagem" min="0">
+	<br>
+	<br>
+	<h3>Possui funcionários para controlar as composteiras?</h3>
+	<input type="radio" name="funcionarios">Sim
+	<input type="radio" name="funcionarios">Não
+	<br>
+	<br>
+
+	<div class="input-group">
+		<span class="input-group-addon" style="float:left">R$</span>
+		<input type="number" min="1" max="10" class="form-control col-3" value="0" style="height:60px;text-align:center;font-size:1.5em;margin:0 auto;font-weight:700;outline: 0;
+		border-width: 0 0 2px;">
+	</div>
+
+
+
+	<footer>
+
+		<div class="container-fluid padding bg-info">
+
+			<div class="row">
+
+				<div class="col-md-4 text-center">
+
+					<div class="espacamento-nome">
+
+						<hr class="bg-light">
+						<a href="" class="card-link">
+							<span class="grupo text-light titulo-rodape">Grupo</span><span
+								class="titulo-rodape foxtech text-light">FoxTech</span>
+						</a>
+					</div>
+
+					<hr class="bg-light">
+
+					<p class="text-light">fale.conosco@foxtech.com.br</p>
+					<p class="text-light">(11) 4002-8922</p>
+					<p class="text-light">Atendimento em dias úteis, das 13h às 19h.</p>
+
+
+				</div>
+
+				<div class="col-md-4 text-center">
+
+					<div class="espacamento-nome">
+						<hr class="bg-light">
+						<h5 class="text-white titulo-rodape">Onde Estamos</h5>
+					</div>
+
+					<hr class="bg-light">
+
+					<p class="text-light">Rua Haddock Lobo, 595</p>
+					<p class="text-light">Av. Paulista, São Paulo, 01414-002</p>
+
+				</div>
+
+				<div class="col-md-4 text-center">
+
+					<div class="espacamento-nome">
+						<hr class="bg-light">
+						<h5 class="text-white titulo-rodape">Menu</h5>
+					</div>
+
+					<hr class="bg-light">
+
+					<div>
+						<ul>
+							<li><a href="." class="card-link text-light">Página Inicial</a></li>
+							<li><a href="sobre.html" class="card-link text-light">Sobre</a></li>
+							<li><a href="simulador.html" class="card-link text-light">Simulador Financeiro</a></li>
+							<li><a href="contato.html" class="card-link text-light">Contato</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+
+
 			</div>
 
 		</div>
 
+	</footer>
 
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="bootstrap4/js/bootstrap.min.js"></script>
+</body>
 
-
-		<!-- Optional JavaScript -->
-	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	    <script src="bootstrap4/js/bootstrap.min.js"></script>
-	</body>
 </html>
