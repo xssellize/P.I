@@ -2,12 +2,24 @@
 
 	/*inicio titulo*/
 
-
+	#grupo{
+		width: 140px;
+		margin-left: 25px;
+		font-family: 'Montserrat', serif;
+		font-size: 40px;
+		color: white;
+	}
+	#foxtech{
+		font-family: 'Russo One', cursive;
+		font-size: 40px;
+		color: white;
+}
 	#logo{
 		width: 200px;
 	}
 	#foxinicial{
-		width: 400px;
+		width: 350px;
+		margin-top: 50px;
 	}
 	body{
 		background-color: #F7F7EB;
