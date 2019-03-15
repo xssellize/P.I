@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Anton|Russo+One|Source+Sans+Pro');
+
+	/*inicio titulo*/
+
+	#grupo{
+		width: 140px;
+		margin-left: 25px;
+		font-family: 'Montserrat', serif;
+		font-size: 40px;
+		color: white;
+	}
+	#foxtech{
+		font-family: 'Russo One', cursive;
+		font-size: 40px;
+		color: white;
+	}
+
+	/*fim titulo*/
+
+	/*Inicio página principal*/
+	.div-foto{
+		text-align: center;
+		height: 500px;
+		background-image: url('https://www.casablancaturismo.com.br/2017/wp-content/uploads/2016/12/tecnologiacb.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		filter: blur(4px);
+		background-size: cover;
+	}
+
+	.div-titulo{
+		position: absolute;
+		margin-top: -23%;
+		width: 100%;
+		text-align: center;
+	}
+	.grupo{
+		font-family: 'Montserrat', serif;
+	}
+	.foxtech{
+		font-family: 'Russo One', cursive;
+	}
+
+
+    #contato {
+        margin-top: 5%;
+        margin-right: 55%;
+        margin-left: 90px;
+		/* border: 5px solid green; */
+		padding: 5%;
+        
+        
+
+	}
+	
+	#nosso{
+		text-align: center;
+
+	}
+
+    .google {
+        
+        width: 100%;
+		margin-top: 2%;
+		margin-right: 860px;
+        
+       
+        
+    }
+
+
+    
+    #fale {
+        /* margin-top: 10%; */
+        margin-right: 3%;
+		margin-left: 800px;
+		position: absolute;
+		margin-top: -679px;
+		margin-bottom: 70px;
+        /* margin-top: -5%; */
+        /* border: 5px solid red;  */
+    }
+
+	#conosco {
+		text-align: center;
+	}
+    .nome{
+        width: 70%;
+    }
+
+    .email {
+        width: 70%;
+    }
+
+
+    .mensagem {
+        width: 70%;
+        height: 55px;
+    }
+
+    
