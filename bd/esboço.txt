@@ -1,0 +1,28 @@
+Cliente:
+	cpfCliente PK,
+	nomeCliente,
+	logradouro,
+	numero,
+	complemento,
+	telefone;
+
+Login:
+	email PK,
+	senha,
+	cpfCliente FK;
+
+Dados:
+	codDado PK,
+	data,
+	temperatura,
+	umidade,
+	aeração,
+	estagio,
+	cpfCliente FK;
+
+Proximas atualizações:
+	Tabelas:
+		Erro,
+		Serviços;
+	
+	
