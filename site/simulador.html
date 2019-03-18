@@ -47,7 +47,7 @@
 			divsala.innerHTML = `Salário Anual dos seus Funcionários: <b>${salarioFuncFormatado}</b>`;
 
 			// Calculo da mensalide do serviço
-			var mensalidadeConta = (conta - sensoUmi - sensoTemp - arduino - implantacao + Number(qtdcomposteiras.value * (composteira / 3)));
+			var mensalidadeConta = (conta - sensoUmi - sensoTemp - arduino - implantacao + Number(qtdcomposteiras.value * (composteira / 2)));
 
 			var mensalidadeFormatado = mensalidadeConta.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 
