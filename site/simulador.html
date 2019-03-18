@@ -9,19 +9,96 @@
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		tr {
-			color: red;
+
+	<script type="text/javascript">
+		function conta(){
+			var composteira = 189.00
+			var arduino = 27.50
+			var sensoTemp = 12.90
+			var sensoUmi = 15.00
+			var internet = 245.50
+			var implantacao = 1470.00
+			var mensalidade = 3000.00
+
+
+			if (document.getElementById('aberto').checked==true && document.getElementById('intsim').checked==true) {
+				var cont1 = Number(qtdcomposteiras.value) * Number(arduino) +  Number(qtdcomposteiras.value) * Number(sensoUmi) + Number(implantacao);
+
+				var formatado = cont1	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+
+			}else if (document.getElementById('fechado').checked==true && document.getElementById('intsim').checked==true) {
+				var cont2 = Number(qtdcomposteiras.value) * Number(arduino) +  Number(qtdcomposteiras.value) * Number(sensoUmi) + Number(sensoTemp) * 4 + Number(implantacao);
+
+				var formatado = cont2	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+
+			}else if (document.getElementById('aberto').checked==true && document.getElementById('intnao').checked==true) {
+				var cont3 = arduino * Number(qtdcomposteiras.value) + sensoUmi * Number(qtdcomposteiras.value)+ internet + implantacao;
+				var formatado = cont3	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+
+			}else if (document.getElementById('fechado').checked==true && document.getElementById('intnao').checked==true) {
+				var cont4 = arduino * Number(qtdcomposteiras.value) + sensoUmi * Number(qtdcomposteiras.value) + 
+				sensoTemp * 4 + internet + implantacao;
+				var formatado = cont4	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+			}
+
+
+			var funci = qtdfunc.value
+			var salafunc = teste.value
+			
+			var anosalario = funci * salafunc * 12
+
+			var formatado = anosalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+				divsala.innerHTML = `Salário Anual de todos os Funcionários ${formatado}`;
+
+
+
+
+
+				var economia = anosalario - mensalidade*12
+					var formatado = economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+				diveco.innerHTML = `Uma economia de: ${formatado}`;
+
+
+			
+			 	
+
 		}
 
-		input {
-			outline: rgba(0, 0, 0, 0);
+		function showhide(){
+			if(document.getElementById('funcsim').checked==true){
+						document.getElementById('teste').style.display='block';
+						document.getElementById('pagofunc').style.display='block';
+						document.getElementById('qtdfuncionarios').style.display='block';
+						document.getElementById('qtdfunc').style.display='block';
+						document.getElementById('texto2').style.display='block';
+						document.getElementById('divsala').style.display='block';
+						document.getElementById('texto3').style.display='block';
+						document.getElementById('diveco').style.display='block';
+
+				}else if (document.getElementById('funcnao').checked==true){	
+						document.getElementById('teste').style.display='none';
+						document.getElementById('pagofunc').style.display='none';
+						document.getElementById('qtdfuncionarios').style.display='none';
+						document.getElementById('qtdfunc').style.display='none';
+						document.getElementById('teste').value = "0";
+						document.getElementById('qtdfunc').value = "0";
+						document.getElementById('texto2').style.display='none';
+						document.getElementById('divsala').style.display='none';
+						document.getElementById('texto3').style.display='none';
+						document.getElementById('diveco').style.display='none';
+				}
+
 		}
 
-		input:focus {
-			border-color: #0079ff;
-		}
-	</style>
+	</script>
 </head>
 
 <body>
@@ -89,28 +166,53 @@
 				</div>
 
 				<div class="card-body">
+
+
 					
 					<h3>Quantas composteiras sua empresa possui?</h3>
-					<input type="number" id="qtdcomposteiras" min="0"
-						class="hidden-xs form-control ng-valid ng-valid-number ng-valid-max ng-valid-min ng-dirty"
-						style="height:54px;text-align:left;padding-left:70px;font-size:1.5em;margin:0 auto 20px auto;font-weight:700;float:left;width:70%">
+					<input type="number" id="qtdcomposteiras" min="0" class="form-control col-3 float-left" id="qtdcomposteiras" value="1" min="1">
 					<br>
-					<br>
-					<h3>Área em metros guadrados das composteiras</h3>
-					<input type="number" id="areacompostagem" min="0">
 					<br>
 					<br>
 					<h3>Possui funcionários para controlar as composteiras?</h3>
-					<input type="radio" name="funcionarios">Sim
-					<input type="radio" name="funcionarios">Não
+					<input type="radio" id="funcsim" name="funcionarios" onclick="showhide()" checked>Sim
+					<input type="radio" id="funcnao" name="funcionarios" onclick="showhide()">Não
+					<br>
+					<br> 
+						<h3 id="qtdfuncionarios">Quantos Funcionários</h3>
+						<input type="number" min="0" class="form-control col-3 float-left" id="qtdfunc" value="0">
+					<br>
+					<br> 
+					<br> 
+						<h3 id="pagofunc">Quanto é pago por cada Funcionário</h3>
+						<input type="number" min="0" class="form-control col-3 float-left" id="teste" value="0">
 					<br>
 					<br>
-
-					<div class="input-group">
-						<span class="input-group-addon" style="float:left">R$</span>
-						<input type="number" min="1" max="10" class="form-control col-3" value="0" style="height:60px;text-align:center;font-size:1.5em;margin:0 auto;font-weight:700;outline: 0;
-						border-width: 0 0 2px;">
+					<br> 
+						<h3 id="local">Local é aberto?</h3>
+					<input type="radio" id="aberto" name="local">Sim
+					<input type="radio" id ="fechado" name="local">Não
+					<br>
+					<br>
+					<h3>Possui Internet?</h3>
+					<input type="radio" id="intsim" name="internet">Sim
+					<input type="radio" id="intnao" name="internet">Não
+					<br>
+					<br>
+					<center><button type="button" class="btn btn-outline-info" onclick="conta()">Fazer Orçamento</button></center>
+					<br>
+					<br>
+					<br>
+					<h3 id="texto1">Equipamentos</h3>
+							<h3 id="texto2">Salário Funcionários</h3>
+								<h3 id="texto3">Economia</h3>
+					<div id="divpreco"></div>
+			
+					<div id="divsala"></div>
+					
+					<div id="diveco"></div>	
 				</div>
+
 
 				</div>
 
@@ -119,7 +221,7 @@
 		</div>
 
 	</div>
-
+				
 
 
 	<footer>
