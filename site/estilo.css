@@ -118,4 +118,48 @@
 			padding: 10px;
 		}
 
+		#teste,#qtdcomposteiras,#areacompostagem,#qtdfunc{
+			height:60px;
+			text-align:center;
+			font-size:1.5em;
+			margin:0 auto;
+			font-weight:700;
+			outline: 0;
+			border-width: 0 0 2px;
+		}
+
+		#divpreco{
+			width: 300px;
+			height: 100px;
+			margin-left: 30px;
+
+		}
+
+		#divsala{
+			width: 300px;
+			height: 100px;
+			margin-left: 390px;
+			margin-top: -100px;
+
+		}
+
+		#diveco{
+			width: 300px;
+			height: 100px;
+			margin-left: 750px;
+			margin-top: -100px;
+
+
+		}
+
+		#texto2{
+			margin-left: 390px;
+			margin-top: -40px;
+		}
+
+		#texto3{
+			margin-left: 750px;
+			margin-top: -40px;
+		}
+
 	/*fim estilo simulador*/
