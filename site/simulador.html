@@ -12,63 +12,62 @@
 
 	<script type="text/javascript">
 		function conta(){
-			var composteira = 189.00
-			var arduino = 27.50
-			var sensoTemp = 12.90
-			var sensoUmi = 15.00
-			var internet = 245.50
-			var implantacao = 1470.00
-			var mensalidade = 3000.00
+			var composteira = 189.00;
+			var arduino = 27.50;
+			var sensoTemp = 12.90;
+			var sensoUmi = 15.00;
+			var internet = 245.50;
+			var implantacao = 1470.00;
+			var mensalidade;
 
 
 			if (document.getElementById('aberto').checked==true && document.getElementById('intsim').checked==true) {
-				var cont1 = Number(qtdcomposteiras.value) * Number(arduino) +  Number(qtdcomposteiras.value) * Number(sensoUmi) + Number(implantacao);
-
-				var formatado = cont1	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-
-				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+				var conta = Number(qtdcomposteiras.value) * Number(arduino) +  Number(qtdcomposteiras.value) * Number(sensoUmi) + Number(implantacao);
 
 			}else if (document.getElementById('fechado').checked==true && document.getElementById('intsim').checked==true) {
-				var cont2 = Number(qtdcomposteiras.value) * Number(arduino) +  Number(qtdcomposteiras.value) * Number(sensoUmi) + Number(sensoTemp) * 4 + Number(implantacao);
-
-				var formatado = cont2	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-
-				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+				var conta = Number(qtdcomposteiras.value) * Number(arduino) +  Number(qtdcomposteiras.value) * Number(sensoUmi) + Number(sensoTemp) * 4 + Number(implantacao);
 
 			}else if (document.getElementById('aberto').checked==true && document.getElementById('intnao').checked==true) {
-				var cont3 = arduino * Number(qtdcomposteiras.value) + sensoUmi * Number(qtdcomposteiras.value)+ internet + implantacao;
-				var formatado = cont3	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-
-				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
+				var conta = arduino * Number(qtdcomposteiras.value) + sensoUmi * Number(qtdcomposteiras.value)+ internet + implantacao;
 
 			}else if (document.getElementById('fechado').checked==true && document.getElementById('intnao').checked==true) {
-				var cont4 = arduino * Number(qtdcomposteiras.value) + sensoUmi * Number(qtdcomposteiras.value) + 
+				var conta = arduino * Number(qtdcomposteiras.value) + sensoUmi * Number(qtdcomposteiras.value) + 
 				sensoTemp * 4 + internet + implantacao;
-				var formatado = cont4	.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-				divpreco.innerHTML = `Preço dos equipamentos instalados em todas as Composteiras ${formatado}`
 			}
 
-
-			var funci = qtdfunc.value
-			var salafunc = teste.value
+			// Calculo salario anual dos fucionários atuais
+			var funci = qtdfunc.value;
+			var salafunc = teste.value;
 			
-			var anosalario = funci * salafunc * 12
+			var anosalario = (funci * salafunc) * 12;
 
-			var formatado = anosalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-				divsala.innerHTML = `Salário Anual de todos os Funcionários ${formatado}`;
+			var salarioFuncFormatado = anosalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
+			divsala.innerHTML = `Salário Anual dos seus Funcionários: <b>${salarioFuncFormatado}</b>`;
 
+			// Calculo da mensalide do serviço
+			var mensalidadeConta = (conta - sensoUmi - sensoTemp - arduino - implantacao + Number(qtdcomposteiras.value * (composteira / 3)));
 
+			var mensalidadeFormatado = mensalidadeConta.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 
+			// Calculo do preço de implantação
+			conta = conta + mensalidadeConta;
 
-				var economia = anosalario - mensalidade*12
-					var formatado = economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-				diveco.innerHTML = `Uma economia de: ${formatado}`;
+			var formatadoConta = conta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
+			// Mostrar preço de implantação + preço da mensalidade
+			divpreco.innerHTML = `Preço total da implantação do serviço: <b>${formatadoConta}</b>, a mensalidade é de: <b>${mensalidadeFormatado}</b>`;
 
-			
-			 	
+			// Calculo da mensalidade anual do serviço
+			var mensalidadeAnualConta = (mensalidadeConta * 12);
+
+			// Conta do calculo da mensalidade anual e economia do cliente
+			var economia = (anosalario - mensalidadeAnualConta);
+
+			var economiaFormatado = economia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+			diveco.innerHTML = `Sua economia usando nosso serviço de controle de compostagem por meio das nossas composterias inteligentes é de: <b>${economiaFormatado}</b> por ano!`;			
 
 		}
 
@@ -161,13 +160,11 @@
 
 				<div class="card-header bg-info text-light">
 					
-					<h2>Aqui vem uma explicação de sobre o que é essa página!</h2>
+					<h2>Aqui você poderá simular um orçamento de implantação das nossas composteiras inteligentes em sua empresa!</h2>
 
 				</div>
 
 				<div class="card-body">
-
-
 					
 					<h3>Quantas composteiras sua empresa possui?</h3>
 					<input type="number" id="qtdcomposteiras" min="0" class="form-control col-3 float-left" id="qtdcomposteiras" value="1" min="1">
@@ -203,9 +200,12 @@
 					<br>
 					<br>
 					<br>
-					<h3 id="texto1">Equipamentos</h3>
-							<h3 id="texto2">Salário Funcionários</h3>
-								<h3 id="texto3">Economia</h3>
+						<h3 id="texto1">Implantação do serviço</h3>
+
+						<h3 id="texto2">Salário Funcionários</h3>
+
+						<h3 id="texto3">Economia</h3>
+
 					<div id="divpreco"></div>
 			
 					<div id="divsala"></div>
