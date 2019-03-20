@@ -1,0 +1,21 @@
+Página Inicial - Informações do produto!
+	Carossel, info sobre o produto, como funciona, equipamentos utilizados,
+vantagens, sobre a empresa.
+
+Simulador financeiro;
+
+Tela de Cadastro, Login;
+	Regra de negócio: email, senha, nome, sobrenome, cpf, logradouro, numero,
+complemento, telefone;
+
+	Autenticação: verificar email;
+
+	Recuperar senha: email;
+	
+	Login: email, senha;
+
+Area do cliente;
+
+Tela de Dados;
+
+...
