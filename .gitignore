@@ -1,7 +1,13 @@
+#isso é um comentario
+#ignorando arquivos por extensão
 *.doc
 *.docx
 *.zip
 
 
-
+#ignorando diretórios(ou pastas) por nome
 testes/
+
+
+#ignorando arquivos especificos
+mundial_do_palmeiras.txt
